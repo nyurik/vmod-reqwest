@@ -16,9 +16,9 @@ regex = "1.5"
 reqwest = { version = "0.11", features = ["stream", "deflate", "gzip", "brotli", "native-tls"] }
 serde_json = "1"
 tokio = { version = "1", features = ["full"] }
-varnish = { git = "https://github.com/gquintard/varnish-rs.git", branch = "feature-macro"}
-varnish-macros = { git = "https://github.com/gquintard/varnish-rs.git", branch = "feature-macro" }
-varnish-sys = { git = "https://github.com/gquintard/varnish-rs.git", branch = "feature-macro"}
+varnish = { git = "https://github.com/gquintard/varnish-rs.git" }
+varnish-macros = { git = "https://github.com/gquintard/varnish-rs.git" }
+varnish-sys = { git = "https://github.com/gquintard/varnish-rs.git" }
 
 [lib]
 crate-type = ["cdylib"]
