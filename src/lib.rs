@@ -1,8 +1,8 @@
 #![expect(clippy::box_collection)] // Box<Vec<T>> is required for now by proc macro
 
 mod implementation;
-
 use varnish::run_vtc_tests;
+
 run_vtc_tests!("tests/*.vtc");
 
 #[varnish::vmod(docs = "README.md")]
@@ -18,7 +18,7 @@ mod reqwest {
     use varnish::ffi::{VCL_BACKEND, VCL_STRING};
     use varnish::vcl::{Backend, Ctx, Event, IntoVCL, Probe, VclError};
 
-    use crate::implementation::reqwest_private::*;
+    use crate::implementation::*;
 
     impl client {
         #[allow(clippy::too_many_arguments)]
