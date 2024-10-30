@@ -1,7 +1,7 @@
 #![allow(clippy::box_collection)]
 mod implementation;
-
 use varnish::run_vtc_tests;
+
 run_vtc_tests!("tests/*.vtc");
 
 #[varnish::vmod(docs = "API.md")]
@@ -17,7 +17,7 @@ mod reqwest {
     use varnish::ffi::{VCL_BACKEND, VCL_STRING};
     use varnish::vcl::{Backend, Ctx, Event, IntoVCL, Probe, VclError};
 
-    use crate::implementation::reqwest_private::{
+    use crate::implementation::{
         build_probe_state, client, process_req, BgThread, Entry, Request, RespMsg, VCLBackend,
         VclTransaction,
     };
