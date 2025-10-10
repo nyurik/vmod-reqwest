@@ -17,7 +17,7 @@ And in both cases:
 - HTTP redirection support (it will automatically follow 30X responses)
 - (optional) automatic `gzip` and `brotli` decompression
 
-As usual, the full VCL API is described in [vmod.vcc](vmod.vcc).
+The full VCL API is described in [API.md](API.md).
 
 Don't hesitate to open github issues if something is unclear or impractical. You can also join us on [discord](https://discord.com/invite/EuwdvbZR6d).
 
@@ -25,9 +25,12 @@ Don't hesitate to open github issues if something is unclear or impractical. You
 
 | vmod-reqwest | varnish |
 | :----------- | :-----: |
-| 0.0.12        | 7.5     |
-| 0.0.11        | 7.5     |
-| 0.0.10        | 7.4     |
+| 0.0.16        | 8.0  |
+| 0.0.15        | 7.7  |
+| 0.0.13        | 7.6    |
+| 0.0.12        | 7.5    |
+| 0.0.11        | 7.5    |
+| 0.0.10        | 7.4    |
 | 0.0.9        | 7.3     |
 | 0.0.8        | 7.3     |
 | 0.0.7        | 7.3     |
